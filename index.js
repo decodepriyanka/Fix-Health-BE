@@ -16,9 +16,11 @@ app.use(formData.parse());
 app.use("/api/doctor", doctorRoute);
 
 const PORT = process.env.PORT || 8000;
+const MONGO_URI =
+  "mongodb+srv://priyankayadav7282:priyanka-123@cluster0.lpynemr.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
