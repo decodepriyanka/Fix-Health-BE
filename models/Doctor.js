@@ -5,6 +5,7 @@ const doctorSchema = new Schema({
   name: String,
   expertise: String,
   city: String,
+  imageSrc: String,
 });
 
 const DoctorModel = model("Doctor", doctorSchema);
